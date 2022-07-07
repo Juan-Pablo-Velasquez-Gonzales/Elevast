@@ -1,0 +1,268 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(0, 89, 255);
+}
+button:hover{
+    background-color: rgb(0, 128, 107);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(240, 214, 209);
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: rgb(0, 0, 0, 0.438);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+
+
+header .logo{
+    display: flex;
+    align-items: center;
+
+}
+
+header .logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+header .logo h2{
+    color: rgb(225, 215, 0);
+    font-size: 1.6em;
+}
+
+div a{
+    font-weight: 600;
+    padding-right: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+div a:hover{
+    color: rgb(0, 100, 255);
+}
+
+
+
+
+
+
+
+#sobre-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: rgb(75, 191, 226);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ) 
+    ,url("../img/sobre-nosotros.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+#mis-vis-val{
+    background-color: rgb(221, 221, 221);
+}
+
+#mis-vis-val .container{
+    text-align: center;
+    padding: 100px 12px;
+}
+
+.color-subrayado{
+    color: rgb(85, 12, 12);
+}
+
+
+
+
+
+
+
+#contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+#contacto h2{
+    font-size: 9vw;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: rgb(30, 30, 30);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .logo{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+
+
+
+
+
+    #sobre-nosotros{
+        height: 90vh;
+    }
+
+
+
+
+
+
+
+    #mis-vis-val .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #mis-vis-val .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #mis-vis-val h2{
+        margin-top: 0px;
+    }
+
+    #mis-vis-val .img-container{
+        background-image: url("../img/mis-vis-val.jpeg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+    }
+
+
+
+
+
+
+
+    #contacto h2{
+        font-size: 5em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
+
+
+
+
+
+
+}
